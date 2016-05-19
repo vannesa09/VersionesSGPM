@@ -38,15 +38,15 @@ public class frContenedor extends javax.swing.JFrame {
     private void initComponents() {
 
         pnContenedorPrincipal = new javax.swing.JPanel();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        mbMenu = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        miPrincipal = new javax.swing.JMenuItem();
+        miClientes = new javax.swing.JMenuItem();
+        miProveedores = new javax.swing.JMenuItem();
+        miMantenimiento = new javax.swing.JMenuItem();
+        miMateriales = new javax.swing.JMenuItem();
+        miPiezas = new javax.swing.JMenuItem();
+        miOrdenes = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(1150, 700));
@@ -59,54 +59,54 @@ public class frContenedor extends javax.swing.JFrame {
         pnContenedorPrincipal.setBackground(new java.awt.Color(102, 153, 255));
         getContentPane().add(pnContenedorPrincipal, java.awt.BorderLayout.CENTER);
 
-        jMenuBar1.setMaximumSize(new java.awt.Dimension(1150, 40));
-        jMenuBar1.setMinimumSize(new java.awt.Dimension(1150, 40));
-        jMenuBar1.setPreferredSize(new java.awt.Dimension(1150, 40));
+        mbMenu.setMaximumSize(new java.awt.Dimension(1150, 40));
+        mbMenu.setMinimumSize(new java.awt.Dimension(1150, 40));
+        mbMenu.setPreferredSize(new java.awt.Dimension(1150, 40));
 
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
-        jMenuItem1.setText("PAGINA PRINCIPAL");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        miPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
+        miPrincipal.setText("PAGINA PRINCIPAL");
+        miPrincipal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                miPrincipalActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenu1.add(miPrincipal);
 
-        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico1.png"))); // NOI18N
-        jMenuItem2.setText("NUESTROS CLIENTES");
-        jMenu1.add(jMenuItem2);
+        miClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico1.png"))); // NOI18N
+        miClientes.setText("NUESTROS CLIENTES");
+        jMenu1.add(miClientes);
 
-        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico2.png"))); // NOI18N
-        jMenuItem7.setText("PROVEEDORES");
-        jMenu1.add(jMenuItem7);
+        miProveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico2.png"))); // NOI18N
+        miProveedores.setText("PROVEEDORES");
+        jMenu1.add(miProveedores);
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico3.png"))); // NOI18N
-        jMenuItem3.setText("R. DE MANTENIMIENTO");
-        jMenu1.add(jMenuItem3);
+        miMantenimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico3.png"))); // NOI18N
+        miMantenimiento.setText("R. DE MANTENIMIENTO");
+        jMenu1.add(miMantenimiento);
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico4.png"))); // NOI18N
-        jMenuItem4.setText("I. DE MATERIALES");
-        jMenu1.add(jMenuItem4);
+        miMateriales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico4.png"))); // NOI18N
+        miMateriales.setText("I. DE MATERIALES");
+        jMenu1.add(miMateriales);
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico5.png"))); // NOI18N
-        jMenuItem5.setText("PIEZAS PARA FABRICACIÓN");
-        jMenu1.add(jMenuItem5);
+        miPiezas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico5.png"))); // NOI18N
+        miPiezas.setText("PIEZAS PARA FABRICACIÓN");
+        jMenu1.add(miPiezas);
 
-        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico6.png"))); // NOI18N
-        jMenuItem6.setText("ORDENES DE COMPRA");
-        jMenu1.add(jMenuItem6);
+        miOrdenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico6.png"))); // NOI18N
+        miOrdenes.setText("ORDENES DE COMPRA");
+        jMenu1.add(miOrdenes);
 
-        jMenuBar1.add(jMenu1);
+        mbMenu.add(jMenu1);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(mbMenu);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void miPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miPrincipalActionPerformed
 
         pnfPrincipal principal = new pnfPrincipal();
         principal.setSize(1100, 600);
@@ -117,7 +117,7 @@ public class frContenedor extends javax.swing.JFrame {
         pnContenedorPrincipal.add(principal, BorderLayout.CENTER);
         pnContenedorPrincipal.revalidate();
         pnContenedorPrincipal.repaint();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_miPrincipalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -157,14 +157,14 @@ public class frContenedor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
+    private javax.swing.JMenuBar mbMenu;
+    private javax.swing.JMenuItem miClientes;
+    private javax.swing.JMenuItem miMantenimiento;
+    private javax.swing.JMenuItem miMateriales;
+    private javax.swing.JMenuItem miOrdenes;
+    private javax.swing.JMenuItem miPiezas;
+    private javax.swing.JMenuItem miPrincipal;
+    private javax.swing.JMenuItem miProveedores;
     private javax.swing.JPanel pnContenedorPrincipal;
     // End of variables declaration//GEN-END:variables
 }
