@@ -42,6 +42,7 @@ public class frContenedor extends javax.swing.JFrame {
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -65,7 +66,7 @@ public class frContenedor extends javax.swing.JFrame {
         jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/home.png"))); // NOI18N
-        jMenuItem1.setText("HOME");
+        jMenuItem1.setText("PAGINA PRINCIPAL");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -73,18 +74,27 @@ public class frContenedor extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico1.png"))); // NOI18N
         jMenuItem2.setText("NUESTROS CLIENTES");
         jMenu1.add(jMenuItem2);
 
+        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico2.png"))); // NOI18N
+        jMenuItem7.setText("PROVEEDORES");
+        jMenu1.add(jMenuItem7);
+
+        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico3.png"))); // NOI18N
         jMenuItem3.setText("R. DE MANTENIMIENTO");
         jMenu1.add(jMenuItem3);
 
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico4.png"))); // NOI18N
         jMenuItem4.setText("I. DE MATERIALES");
         jMenu1.add(jMenuItem4);
 
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico5.png"))); // NOI18N
         jMenuItem5.setText("PIEZAS PARA FABRICACIÓN");
         jMenu1.add(jMenuItem5);
 
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico6.png"))); // NOI18N
         jMenuItem6.setText("ORDENES DE COMPRA");
         jMenu1.add(jMenuItem6);
 
@@ -154,6 +164,7 @@ public class frContenedor extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JPanel pnContenedorPrincipal;
     // End of variables declaration//GEN-END:variables
 }
