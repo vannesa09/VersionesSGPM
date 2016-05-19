@@ -76,6 +76,11 @@ public class frContenedor extends javax.swing.JFrame {
 
         miClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico1.png"))); // NOI18N
         miClientes.setText("NUESTROS CLIENTES");
+        miClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(miClientes);
 
         miProveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico2.png"))); // NOI18N
@@ -84,18 +89,38 @@ public class frContenedor extends javax.swing.JFrame {
 
         miMantenimiento.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico3.png"))); // NOI18N
         miMantenimiento.setText("R. DE MANTENIMIENTO");
+        miMantenimiento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu1.add(miMantenimiento);
 
         miMateriales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico4.png"))); // NOI18N
         miMateriales.setText("I. DE MATERIALES");
+        miMateriales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(miMateriales);
 
         miPiezas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico5.png"))); // NOI18N
         miPiezas.setText("PIEZAS PARA FABRICACIÓN");
+        miPiezas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu1.add(miPiezas);
 
         miOrdenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ico6.png"))); // NOI18N
         miOrdenes.setText("ORDENES DE COMPRA");
+        miOrdenes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu1.add(miOrdenes);
 
         mbMenu.add(jMenu1);
@@ -118,6 +143,71 @@ public class frContenedor extends javax.swing.JFrame {
         pnContenedorPrincipal.revalidate();
         pnContenedorPrincipal.repaint();
     }//GEN-LAST:event_miPrincipalActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        pnfClientes clientes = new pnfClientes();
+        
+        clientes.setSize(1100, 600);
+        clientes.locate(5, 5);
+        clientes.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(clientes, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        pnfMantenimientos mantenimientos = new pnfMantenimientos();
+        
+        mantenimientos.setSize(1100, 600);
+        mantenimientos.locate(5, 5);
+        mantenimientos.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(mantenimientos, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        pnfMateriales materiales = new pnfMateriales();
+        
+        materiales.setSize(1100, 600);
+        materiales.locate(5, 5);
+        materiales.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(materiales, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        pnfPiezas piezas = new pnfPiezas();
+        
+        piezas.setSize(1100, 600);
+        piezas.locate(5, 5);
+        piezas.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(piezas, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        pnfOrdenCompra ordenesCompra = new pnfOrdenCompra();
+        
+        ordenesCompra.setSize(1100, 600);
+        ordenesCompra.locate(5, 5);
+        ordenesCompra.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(ordenesCompra, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
