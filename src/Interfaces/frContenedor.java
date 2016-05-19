@@ -74,18 +74,43 @@ public class frContenedor extends javax.swing.JFrame {
         jMenu1.add(jMenuItem1);
 
         jMenuItem2.setText("NUESTROS CLIENTES");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem2);
 
         jMenuItem3.setText("R. DE MANTENIMIENTO");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem3);
 
         jMenuItem4.setText("I. DE MATERIALES");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem4);
 
         jMenuItem5.setText("PIEZAS PARA FABRICACIÓN");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem5);
 
         jMenuItem6.setText("ORDENES DE COMPRA");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
         jMenu1.add(jMenuItem6);
 
         jMenuBar1.add(jMenu1);
@@ -108,6 +133,71 @@ public class frContenedor extends javax.swing.JFrame {
         pnContenedorPrincipal.revalidate();
         pnContenedorPrincipal.repaint();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        pnfClientes clientes = new pnfClientes();
+        
+        clientes.setSize(1100, 600);
+        clientes.locate(5, 5);
+        clientes.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(clientes, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        pnfMantenimientos mantenimientos = new pnfMantenimientos();
+        
+        mantenimientos.setSize(1100, 600);
+        mantenimientos.locate(5, 5);
+        mantenimientos.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(mantenimientos, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        pnfMateriales materiales = new pnfMateriales();
+        
+        materiales.setSize(1100, 600);
+        materiales.locate(5, 5);
+        materiales.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(materiales, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        pnfPiezas piezas = new pnfPiezas();
+        
+        piezas.setSize(1100, 600);
+        piezas.locate(5, 5);
+        piezas.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(piezas, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+        pnfOrdenCompra ordenesCompra = new pnfOrdenCompra();
+        
+        ordenesCompra.setSize(1100, 600);
+        ordenesCompra.locate(5, 5);
+        ordenesCompra.setVisible(true);
+
+        pnContenedorPrincipal.removeAll();
+        pnContenedorPrincipal.add(ordenesCompra, BorderLayout.CENTER);
+        pnContenedorPrincipal.revalidate();
+        pnContenedorPrincipal.repaint();
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     /**
      * @param args the command line arguments
